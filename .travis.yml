@@ -1,3 +1,10 @@
+language: objective-c
+osx_image: xcode8.3
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+script:
+- ./build.sh
 deploy:
   provider: releases
   api_key:
