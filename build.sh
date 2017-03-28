@@ -47,6 +47,13 @@ fi
 
 git checkout $TAG || { echo "The tag for this repo must match the tag of the mirrored repo."; exit 1; }
 
+if [ -f Cartfile ]; then
+    if [ ! -f Cartfile.resolved ]; then
+        echo "Cartfile present but not Cartfile.resolved, running carthage bootstrap to resolve"
+        carthage bootstrap --platform iOS || exit 1
+    fi
+fi
+
 carthage build --no-skip-current --platform iOS || exit 1
 echo "Running carthage archive for: $ARCHIVES"
 carthage archive $ARCHIVES || exit 1
