@@ -10,5 +10,6 @@ deploy:
   api_key:
     secure: YZcLe9SCTRXg7kwQWX/PYjq26h2/KYFuedhDBl41WXLtiiVm0sAQL1pcWf2y5GBGtKeg5JCoNvAhHNfcI8+yMt6XNnS53o1fxp89MSZ2X4O5mkUL8WIkUFj3oaP7L1oMnarAzw0ZLhZlS5WU3nlCfuF57tmYG017V09/aiTBVi1YCAS36QSVrFFzRuEPDlE/1tuh7bNdOeMAHV3K96ySQ+3XhQqBfpReIQM+5jV4ftlQ+eEfAPczXWefJpwtDyepq/GaeZNztsKCd+a7AQ1jJVZa2EXraRL8q5DSgmQFzGYaqokrLcTFwdxYJHA8Hx1OQt6HjsdKvG3VW/txf/Vz7m+ik7x6UefXPNGXJN5lMSvMFZYJYV9AtZpXcVpo5YqUXdHnr6j1FJz5nyKppRLzn13DgvKAOaJs4yk8h9C0FrqZWxEZPWUtzBKVkrOMqZw7LN5oIypMGbEI19byWXPi/djPPPe9fXZ2bbKeBVGtvihoMlEnpv7CdE7cUEg3ZAQP1ykcuxMGSBKIP2lFicgLx1+aWd4zmGpmSVWk21KokhIHduD2gDDTYlPAakZNOTaw/6STcF9emDYMfS59mV2MvBGbj7z+Pyg/UTMQbTS61Xg/2PyEVXicWM4pVuUGBQTWp/R5+jXMrzQPqtpt1hrdgroz+9tnDIYc+zDcpj7Ai1w=
   file: PromiseKit.framework.zip
+  skip_cleanup: true
   on:
-    repo: carthaged/PromiseKit
+    tags: true
