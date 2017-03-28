@@ -57,4 +57,6 @@ fi
 carthage build --no-skip-current --platform iOS || exit 1
 echo "Running carthage archive for: $ARCHIVES"
 carthage archive $ARCHIVES || exit 1
+ls
 mv *.framework.zip ../../Archives
+ls ../../Archives
